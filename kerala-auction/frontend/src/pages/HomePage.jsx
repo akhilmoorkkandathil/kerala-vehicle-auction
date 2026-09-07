@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import StatsBanner from '../components/StatsBanner';
-import FilterPanel from '../components/FilterPanel';
-import VehicleCard from '../components/VehicleCard';
+import StatsBanner from '../components/StatsBanner.jsx';
+import FilterPanel from '../components/FilterPanel.jsx';
+import VehicleCard from '../components/VehicleCard.jsx';
 import './HomePage.css';
 
 const DEFAULT_FILTERS = {

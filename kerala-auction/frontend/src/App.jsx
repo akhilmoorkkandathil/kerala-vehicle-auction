@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
-import HomePage from './pages/HomePage';
-import DetailPage from './pages/DetailPage';
+import Header from './components/Header.jsx';
+import HomePage from './pages/HomePage.jsx';
+import DetailPage from './pages/DetailPage.jsx';
 import './App.css';
 
 export default function App() {
