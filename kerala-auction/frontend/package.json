@@ -4,19 +4,16 @@
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "ajv": "^8.11.0"
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build"
-  },
-  "proxy": "http://localhost:3001",
-  "overrides": {
-    "ajv": "^8.11.0",
-    "ajv-keywords": "^5.0.0",
-    "schema-utils": "^4.0.0"
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
