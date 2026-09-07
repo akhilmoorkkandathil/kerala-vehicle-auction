@@ -1,0 +1,159 @@
+.vehicle-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1.5px solid var(--slate-300);
+  cursor: pointer;
+  transition: transform 0.13s ease, box-shadow 0.13s ease, border-color 0.13s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--teal-500);
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid var(--slate-100);
+}
+
+.vehicle-icon { font-size: 28px; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+
+.card-title-group { flex: 1; min-width: 0; }
+
+.vehicle-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--slate-900);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vehicle-year {
+  font-weight: 400;
+  color: var(--slate-500);
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.vehicle-reg {
+  font-size: 12px;
+  color: var(--teal-700);
+  font-weight: 500;
+  margin-top: 2px;
+  font-family: 'Space Grotesk', monospace;
+  letter-spacing: 0.04em;
+}
+
+.condition-badge {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.cond-good    { background: #DCFCE7; color: #15803D; }
+.cond-avg     { background: #FEF3C7; color: #92400E; }
+.cond-poor    { background: #FEE2E2; color: #991B1B; }
+.cond-scrap   { background: var(--slate-300); color: var(--slate-700); }
+.cond-unknown { background: var(--slate-100); color: var(--slate-500); }
+
+.card-body {
+  padding: 10px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.card-meta-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12.5px;
+  color: var(--slate-600, #4B5563);
+}
+
+.meta-icon { font-size: 13px; }
+
+.price-auction-row {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.price-block, .auction-block { display: flex; flex-direction: column; gap: 2px; }
+
+.price-label {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--slate-500);
+  font-weight: 500;
+}
+
+.price-value {
+  font-family: var(--font-head);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--teal-700);
+}
+
+.emd-label {
+  font-size: 11px;
+  color: var(--slate-500);
+}
+
+.auction-date {
+  font-family: var(--font-head);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--slate-700);
+}
+
+.auction-date.urgent { color: var(--error); }
+
+.days-left {
+  font-size: 11px;
+  color: var(--slate-500);
+  font-weight: 500;
+}
+
+.days-left.urgent { color: var(--error); font-weight: 600; }
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: var(--teal-50);
+  border-top: 1px solid var(--teal-200);
+}
+
+.source-tag {
+  font-size: 11px;
+  color: var(--teal-700);
+  font-weight: 500;
+}
+
+.view-detail {
+  font-size: 12px;
+  color: var(--teal-500);
+  font-weight: 600;
+}

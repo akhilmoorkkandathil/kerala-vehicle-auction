@@ -1,0 +1,104 @@
+.filter-panel {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--slate-300);
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 72px;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid var(--slate-200, #E5E7EB);
+  background: var(--teal-700);
+}
+
+.filter-title {
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.clear-btn {
+  font-size: 12px;
+  color: var(--teal-200);
+  background: none;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background 0.12s;
+}
+.clear-btn:hover { background: rgba(255,255,255,0.12); }
+
+.filter-group {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--slate-100);
+}
+
+.filter-group-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--slate-500);
+  margin-bottom: 8px;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1.5px solid var(--slate-300);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  color: var(--slate-700);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B7280' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 28px;
+  cursor: pointer;
+}
+.filter-group select:focus { border-color: var(--teal-500); outline: none; }
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1.5px solid var(--slate-300);
+  background: var(--white);
+  color: var(--slate-700);
+  transition: all 0.12s;
+}
+.chip:hover { border-color: var(--teal-500); color: var(--teal-700); }
+.chip.active { background: var(--teal-700); border-color: var(--teal-700); color: var(--white); }
+
+.price-inputs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.price-inputs input {
+  flex: 1;
+  min-width: 0;
+  padding: 7px 8px;
+  border: 1.5px solid var(--slate-300);
+  border-radius: var(--radius-sm);
+  color: var(--slate-700);
+}
+.price-inputs input:focus { border-color: var(--teal-500); outline: none; }
+.price-sep { color: var(--slate-400); font-size: 13px; }
